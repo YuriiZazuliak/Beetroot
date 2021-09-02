@@ -1,6 +1,25 @@
 div h1 {
     background-color: #A52A2A;
-    
-}
-
+    color: white; 
+    text-align: center;
+    font-weight: bold; 
+};
+article {
+    font-size: 18px;
+    margin:auto;
+};
+span {
+    color: blue;
+};
+img {
+    width: 100%;
+   align-self: center;
+   border: 2px dashed #000;
+};
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 30 0 30 15;
+};
 
