@@ -1,0 +1,17 @@
+body {
+    background-color: #990909;
+};
+header {
+    align-content: center;
+};
+.images {
+    background-color: black;
+    padding: 30px;
+    margin: 15px 0 15px 15px;
+};
+header {
+    text-align: center;
+};
+section div {
+    padding: 20px;
+};
