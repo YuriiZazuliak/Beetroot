@@ -1,25 +1,28 @@
-div h1 {
+Doctipe
+div {
     background-color: #A52A2A;
     color: white; 
+    margin: 30px 0 15px 15px;
     text-align: center;
     font-weight: bold; 
-};
-article {
-    font-size: 18px;
-    margin:auto;
-};
-span {
-    color: blue;
 };
 img {
     width: 100%;
    align-self: center;
    border: 2px dashed #000;
 };
+article {
+    font-size: 18px;
+    margin: auto;
+};
+span {
+    color: blue;
+};
+
 footer {
     text-align: center;
     background-color: black;
     color: white;
-    margin: 30 0 30 15;
+    margin: 30px 0 30px 15px;
 };
 
