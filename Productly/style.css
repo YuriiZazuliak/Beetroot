@@ -1,7 +1,6 @@
 body {
     font-family: "Poppins";
     width: 1400px;
-    align-self: center;
     margin: 0;
     padding: 0;
 }
@@ -59,13 +58,14 @@ section {
     width: 1125px;
     height: 495px;
     white-space: nowrap;
-    display: flex;
+
 }
 .main {
     width: 515px;
     display: inline-block;
     white-space: initial;
-    padding-top: 80px;
+    vertical-align: top;
+    margin-top: 80px;
 }
 .main h1 {
     font-family: "Poppins";
@@ -100,9 +100,74 @@ a {
     font-weight: 600;
     font-size: 16px;
 }
-.first_picture {
-    width: 604px;
+section .first_picture {
+    width: 605px;
     height: 495px;
-    margin-left: 3px;
     display: inline-block;
+    margin-left: 3px;
+}
+/* second section*/
+.second_section {
+width: auto;
+height: 545px;
+white-space: inherit;
+margin-top: 135px;
+text-align: center;
+}
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #2F281E;
+    width: 540px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.second_section > div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+div.little_block {
+    width: 240px;
+    height: 205px;
+    margin: 54px 23px auto 23px;
+    text-align: left;
+}
+.little_block svg {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    text-align: left;
+}
+.second_section .yellow_button {
+    width: 175px;
+    height: 55px;
+    margin-top: 35px;
+
+}
+/* Third section*/
+.third_class {
+    margin: 100px 130px auto 145px;
+    display: flex;
+    height: 574px;
+
+}
+.third_class div {
+    white-space:initial;
+    width: 485px;
+    text-align: left;
+}
+.third_p {
+font-weight: 500;
+font-size: 16px;
+}
+h4 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.third_class svg {
+    width: 520px;
+    height: 100%;
+    margin: 0 auto auto 105px;
 }
