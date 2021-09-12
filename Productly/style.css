@@ -122,11 +122,11 @@ section .first_picture {
 }
 /* second section*/
 .second_section {
-width: auto;
-height: 545px;
-white-space: inherit;
-margin-top: 135px;
-text-align: center;
+    width: auto;
+    height: 545px;
+    white-space: inherit;
+    margin-top: 135px;
+    text-align: center;
 }
 h2 {
     font-weight: bold;
@@ -266,4 +266,51 @@ li p {
 footer {
     border-top: 1px solid rgba(188, 208, 229, 1);
     margin-top: 145px;
+    width: 1100px;
+    margin-left: 160px;
+}
+footer .last_logo {
+    display: block;
+    margin-top: 100px;
+    margin-left: 0;
+}
+footer .footer {
+    margin-left: 0;
+    margin-bottom: 83px;
+    height: auto;
+    font-size: 16px;
+}
+footer div {
+    display: inline-block;
+    line-height: 35px;
+    color: #544837;
+    vertical-align: top;
+}
+footer .footer_div_1{
+    margin-top: 30px;
+    margin-left: 325px;
+    width: 115px;
+}
+footer .footer_div_2 {
+    margin-left: 129px;
+    margin-top: 30px;
+    width: 130px;
+}
+footer .footer_div_3 {
+    margin-left: 80px;
+    height: 200px;
+    margin-top: 30px;
+}
+footer form {
+    border: 1px solid;
+    border-color: #BCD0E5;
+    margin-top: 25px;
+ 
+    width: 325px;
+    height: 48px;
+}
+footer button {
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
 }

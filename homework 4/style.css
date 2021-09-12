@@ -29,7 +29,7 @@ section {
         margin-block-end: 0;
         
       }
-      .Easy_Customize {
+.Easy_Customize {
         font-size: 14px;
         font-family: "ProximaNova";
         color: rgb(0, 0, 0);
@@ -37,7 +37,7 @@ section {
         line-height: 1.714;
         text-align: center;
       }
-      .Fast_and_reliable {
+.Fast_and_reliable {
         font-size: 14px;
         font-family: "ProximaNova";
         color: rgb(0, 0, 0);
@@ -45,10 +45,31 @@ section {
         line-height: 1.714;
         text-align: center;
       }
-      svg:hover {
-        color: #2a69a6;
-        border: 1px solid #2a69a6;
+      .cls-2 {
+        fill: white;
+        stroke: #1275b9;
       }
+      .cls-23 {
+        top: 20px;
+        left: 20px;
+      }
+
+.cls-3 {
+        fill: #1275b9;
+      }
+
+.cls-4 {
+        fill: #ffffff;
+      }
+.cls-3:hover {
+        fill: white;
+        stroke: #2a69a6;
+      }
+.cls-3:hover + .cls-4 {
+        fill: #2a69a6;
+      }
+    
+
 
       
       
