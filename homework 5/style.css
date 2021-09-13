@@ -1,0 +1,94 @@
+body {
+    text-align: center;
+    margin: 0 12.5% 0 12.5%;
+    padding-top: 140px;
+    position: relative;
+    font-family: "Montserrat";
+}
+/*header*/
+header {
+    text-align: center;
+}
+header h4 {
+        font-size: 12px;
+        color: rgb(137, 143, 153);
+        font-weight: bold;
+        line-height: 2.5;
+        text-align: center;     
+        font-family: "Montserrat";  
+        text-transform: uppercase;
+ }     
+header h1 {
+    font-size: 48px;
+    color: rgb(14, 200, 203);
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: center;
+    font-family: "Montserrat"; 
+    }
+header p {
+    font-size: 18px;
+    font-family: "PTSans";
+    color: rgb(153, 153, 153);
+    text-transform: uppercase;
+    line-height: 1.667;
+    padding-left: 23.15%;
+    padding-right: 23.15%;
+    margin-top: 50px;
+}
+
+main {
+    display: flex;
+    margin-top: 110px;
+    margin-bottom: 140px;
+}
+section {
+    width: 33%;
+    height: 420px;
+}
+
+
+/*for all section same*/
+svg {
+        fill: rgb(27, 27, 27);
+        width: 66px;
+        height: 66px; 
+        margin-top: 55px;     
+}
+h2 {
+        font-size: 21px;
+        font-family: "Montserrat";
+        color: rgb(27, 27, 27);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        margin: 56px 15% 0 15%;
+    }
+.section_2 h2 {
+    margin-top: 43px;
+}
+section p {
+        font-size: 14px;
+        font-family: "PTSans";
+        color: rgb(119, 119, 119);
+        line-height: 1.571;
+        text-align: justify; 
+        margin: 35px 13% 0 13%; 
+    }
+section:hover {
+    background-color: rgb(14, 200, 203);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(14, 200, 203);
+}
+section:hover > * {
+    color: white;
+    fill: white;
+    background-color: rgb(14, 200, 203);   
+}
+main h2:not(:nth-child(2)) {
+ margin-top: 55px;
+}
+  
+      
+
