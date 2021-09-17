@@ -14,7 +14,8 @@ header h4 {
         color: rgb(137, 143, 153);
         font-weight: bold;
         line-height: 2.5;
-        text-align: center;     
+        text-align: center;
+        letter-spacing: 0.2rem;     
         font-family: "Montserrat";  
         text-transform: uppercase;
  }     
@@ -23,8 +24,11 @@ header h1 {
     color: rgb(14, 200, 203);
     text-transform: uppercase;
     line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
     text-align: center;
     font-family: "Montserrat"; 
+
     }
 header p {
     font-size: 18px;
@@ -32,8 +36,9 @@ header p {
     color: rgb(153, 153, 153);
     text-transform: uppercase;
     line-height: 1.667;
-    padding-left: 23.15%;
-    padding-right: 23.15%;
+    width: 54%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
 }
 
@@ -44,7 +49,8 @@ main {
 }
 section {
     width: 33%;
-    height: 420px;
+    overflow: hidden;
+    background-color: #f7f7f7;
 }
 
 
@@ -73,7 +79,7 @@ section p {
         color: rgb(119, 119, 119);
         line-height: 1.571;
         text-align: justify; 
-        margin: 35px 13% 0 13%; 
+        margin: 35px 13% 100px 13%; 
     }
 section:hover {
     background-color: rgb(14, 200, 203);
@@ -89,6 +95,4 @@ section:hover > * {
 main h2:not(:nth-child(2)) {
  margin-top: 55px;
 }
-  
-      
-
+ 
