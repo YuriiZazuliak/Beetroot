@@ -1,0 +1,211 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    background-color: #e2e7ec;
+}
+main {
+    box-sizing: border-box;
+    margin: 90px 5% 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+/*section1*/
+.section1 {
+    background: linear-gradient(to top, rgba(10, 10, 10, 100), rgba(20, 20, 20, 0)),  url(Layer8.png) no-repeat;
+    background-size: 100%;
+    height: 545px;
+    width: 66%;
+    height: 100vh;
+}
+.section1 p {
+        font-size: 13px;
+        font-family: "Myriad Pro";
+        color: rgba(129, 129, 129, 0.502);
+        text-transform: uppercase;
+        line-height: 2.308;  
+        margin-left: 5%;
+        margin-top: 425px;
+}
+.section1 h1 {
+    font-weight: 600;
+    width: 60%;
+    font-size: 30px;
+    font-family:sans-serif;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-left: 5%;
+    margin-top: 15px;
+}
+/*section2*/
+.section2 {
+    width: 32%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
+    overflow: hidden;
+}
+.section2 img {
+    width: 100%;
+    height: 250px;
+}
+.section2 div {
+    box-sizing: border-box;
+    height: 270px;
+    padding: 0.5rem 6%;
+}
+.section2 p {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: rgb(129, 129, 129);
+    text-transform: uppercase;
+    line-height: 2.308;
+    margin-bottom: 0;
+}
+.section2 h2 {
+    font-size: 22px;
+    font-family: sans-serif;
+    color: rgb(29, 29, 29);
+    text-transform: uppercase;
+    line-height: 1.364;
+    margin-top: 5px;
+  }
+.section2 div img {
+    width: 55px;
+    height: 55px;
+    margin-top: 70px;
+}
+/*section3*/
+.section3 {
+    width: 32%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 20px;
+}
+.section3 img {
+    width: 100%;
+}
+.section3 div {
+    box-sizing: border-box;
+    height: 270px;
+    padding: 0.5rem 6%;
+}
+.section3 p {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: rgb(129, 129, 129);
+    text-transform: uppercase;
+    line-height: 2.308;
+    margin-bottom: 0;
+}
+.section3 h2 {
+    font-size: 22px;
+    font-family: sans-serif;
+    color: rgb(29, 29, 29);
+    text-transform: uppercase;
+    line-height: 1.364;
+    margin-top: 5px;
+  }
+.section3 div img {
+    width: 55px;
+    height: 55px;
+    margin-top: 70px;
+}
+
+/*section4*/
+.section4 {
+    width: 32%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 20px;
+}
+.section4 img {
+    width: 100%;
+}
+.section4 div {
+    box-sizing: border-box;
+    height: 270px;
+    padding: 0.5rem 6%;
+}
+.section4 h2 {
+    font-size: 22px;
+    font-family: sans-serif;
+    color: rgb(29, 29, 29);
+    text-transform: uppercase;
+    line-height: 1.364;
+    margin-top: 50px;
+  }
+.section4 div img {
+    width: 55px;
+    height: 55px;
+    margin-top: 70px;
+}
+/*section5*/
+.section5 {
+    width: 32%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 20px;
+}
+.section5 img {
+    width: 100%;
+}
+.section5 div {
+    box-sizing: border-box;
+    height: 270px;
+    padding: 0.5rem 6%;
+}
+.section5 p {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: rgb(129, 129, 129);
+    text-transform: uppercase;
+    line-height: 2.308;
+    margin-bottom: 0;
+}
+.section5 h2 {
+    font-size: 22px;
+    font-family: sans-serif;
+    color: rgb(29, 29, 29);
+    text-transform: uppercase;
+    line-height: 1.364;
+    margin-top: 5px;
+  }
+.section5 div img {
+    width: 55px;
+    height: 55px;
+    margin-top: 70px;
+}
+/*footer*/
+footer {
+    height: 130px;
+    margin: auto;
+    width: 32%;
+    text-align: center;
+    padding-top: 80px;
+}
+footer svg {
+    display: inline-block;
+    vertical-align: middle; 
+}
+footer p {
+    display: inline-block;
+    font-size: 13px;
+    font-family: "HansKendrick";
+    font-weight: 700;
+    color: rgb(153, 165, 176);
+    text-transform: uppercase;
+    line-height: 2.308; 
+    margin-block-start: 0;
+    margin-block-end: 0;   
+}

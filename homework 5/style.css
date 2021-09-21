@@ -59,10 +59,10 @@ svg {
         fill: rgb(27, 27, 27);
         width: 66px;
         height: 66px; 
-        margin-top: 55px;     
+        margin-top: 3vw;     
 }
 h2 {
-        font-size: 21px;
+        font-size: 1.5vw;
         font-family: "Montserrat";
         color: rgb(27, 27, 27);
         text-transform: uppercase;
