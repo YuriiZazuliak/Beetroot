@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url(./fonts/MYRIADPRO-COND.OTF);
+    src: url(./fonts/MYRIADPRO-CONDIT.OTF);
+    src: url(./fonts/MyriadPro-Light.otf);
+    src: url(./fonts/MYRIADPRO-REGULAR.OTF);
+}
+body {
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+main {
+    background-color: white;
+    margin: 130px 6%;
+    padding: 125px 8.5%;
+}
+img {
+float: left;
+margin-right: 30px;
+}
+h1 {
+    font-size: 42px;
+    font-family: "Playfair Display";
+    color: rgb(23, 23, 23);
+    line-height: 1.2;
+    text-align: left;
+    font-weight: 500;
+    margin-top: 0;
+  }
+p {
+        font-size: 18px;
+        font-family: "Myriad Pro";
+        color: rgba(23, 23, 23, 0.50);
+        line-height: 1.889;
+        font-weight: lighter;
+        font-style: normal;
+  }
+section .second_p {
+    margin-top: 50px;
+}
+section .third_p {
+    margin-top: 50px;
+}
+p i {
+      font-size: 25px;
+      font-weight: 500;
+      font-family: "Myriad Pro";
+      color: rgba(23, 23, 23, 0.702);
+      line-height: 1.889;
+}
+span {
+    font-size: 50px;
+    margin-right: 20px;
+}
+ button {
+      width: 28%;
+      height: 70px;
+      border: 2px solid #eaa258;
+      background-color: white;
+      font-size: 18px;
+    font-family: "Lato";
+    color: rgb(234, 162, 88);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.889;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+}
+  
+  

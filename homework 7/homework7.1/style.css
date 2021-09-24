@@ -9,6 +9,8 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 /*style for all section*/
@@ -20,12 +22,12 @@ section {
     box-sizing: border-box;
     overflow: hidden;
 }
-section:nth-child(2) {
+section:hover {
     height: 84%;
     align-items: center;
 }
-section:nth-child(2) h1 {
-    margin-bottom: 4rem;
+section:hover svg {
+    margin-top: 2rem;
 }
 h1 {
     font-size: 70px;

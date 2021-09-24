@@ -1,0 +1,186 @@
+@font-face {
+    font-family: ProximaNova;
+    src: url(./fonts/ProximaNova-Regular.woff2);
+    src: url(./fonts/ProximaNova-Regular.woff);
+}
+@font-face {
+    font-family: "Myriad Pro";
+    src: url(./fonts/MYRIADPRO-REGULAR.OTF);
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('Georgia-BoldItalic.eot');
+	src: local('Georgia Bold Italic'), local('Georgia-BoldItalic'),
+		url('Georgia-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('Georgia-BoldItalic.woff') format('woff'),
+		url('Georgia-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('Georgia-Italic.eot');
+	src: local('Georgia Italic'), local('Georgia-Italic'),
+		url('Georgia-Italic.eot?#iefix') format('embedded-opentype'),
+		url('Georgia-Italic.woff') format('woff'),
+		url('Georgia-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('Georgia-Bold.eot');
+	src: local('Georgia Bold'), local('Georgia-Bold'),
+		url('Georgia-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Georgia-Bold.woff') format('woff'),
+		url('Georgia-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('Georgia.eot');
+	src: local('Georgia'),
+		url('Georgia.eot?#iefix') format('embedded-opentype'),
+		url('Georgia.woff') format('woff'),
+		url('Georgia.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #464f54;
+}
+/*header*/
+header {
+    width: 73%;
+    background-color: #181818;
+    color: white;
+    margin: 50px 0 auto auto;
+    box-sizing: border-box;
+    height: 185px;
+    padding-top: 50px;
+    position: relative;
+    z-index: 6;
+    overflow: hidden;
+}
+header p {
+        font-size: 15px;
+        font-family: "ProximaNova";
+        color: rgb(118, 118, 118);
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.4rem;
+        margin: 0;
+        margin-left: 65px;
+       
+}
+h2 {
+    font-size: 48px;
+    font-family: "Playfair Display";
+    color: rgb(254, 254, 254);
+    font-weight: 400;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-left: 65px;
+}
+h2::after {
+    content: "";
+    display: inline-block;
+    height: 37px;
+    width: 1px;
+    background-color: white;
+    margin-left: 3px;
+    margin-bottom: -3px;  
+}
+header P:last-child {
+    content: "";
+    display: block;
+    width:100%;
+    height: 3px;
+    background-color: white;
+    margin-left: 65px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.102;
+}
+/*section*/
+.section1 {
+    background-color: #f4ba2c;
+    width: 67%;
+    height: 80px;
+    margin: 0 0 auto auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 6;
+    overflow: hidden;
+}
+.section1 svg {
+    margin: auto;
+}
+.section1 svg .cls-2 {
+    opacity: 100;
+}
+.section1 svg:last-child {
+   margin-right: 160px;
+}
+/*main*/
+main {
+    background-color: white;
+    margin: -165px 5% 0;
+    padding-top: 200px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 15px black;
+    overflow: hidden;
+}
+main section {
+    margin: 0 13% 0;
+}
+main section .first_p {
+        font-size: 30px;
+        font-family: "ProximaNova";
+        color: rgb(180, 180, 180);
+        text-transform: uppercase;
+        text-align: left;
+        margin-block-start: 0;
+        margin-block-end: 0;
+}
+h1 {
+    font-size: 90px;
+    font-family: "Myriad Pro";
+    font-weight: 500;
+    color: rgb(42, 42, 42);
+    text-transform: uppercase;
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+main section .italic {
+    font-size: 32px;
+    font-family: "Georgia";
+    color: rgb(143, 143, 143);
+    font-style: italic;
+    line-height: 2.081;
+    font-weight: 400;
+    margin: 0;
+  }
+
+main section p.maintext {
+    font-size: 28px;
+    font-family: "Georgia";
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  
+  
