@@ -11,7 +11,7 @@ header {
     background-image: url(./images/imgcopy.png);
     background-position: 100%;
     background-repeat: no-repeat;
-
+    position: relative;
 }
 header nav img {
     display: inline;
@@ -32,8 +32,7 @@ header nav ul {
     margin-right: 10vw;
     justify-content: space-evenly;
     margin-block-start: 0;
-    margin-block-end: 0;
-    
+    margin-block-end: 0;   
 }
 header nav ul li {
     display: inline;
@@ -63,7 +62,7 @@ section h2 {
     font-family: "Raleway";
     font-weight: 800;
     color: rgb(38, 38, 38);
-    line-height: 0.417;
+    line-height: 1;
     text-align: left;
   }
 section p {
@@ -90,9 +89,10 @@ section button a {
     line-height: 1.35;
 }
 header .scrool_logo {
-    display: block;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    margin: 295px auto auto;
+    margin: auto auto 20px;  
 }
 /*section2*/
 main {
@@ -121,7 +121,7 @@ main .section2 img {
         font-family: "Raleway";
         color: rgb(255, 255, 255);
         font-weight: bold;
-        line-height: 0.3;
+        line-height: 1;
         margin-top: 0;
         margin-bottom: 30px;
 }
