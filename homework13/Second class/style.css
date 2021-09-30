@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url(./fonts/MYRIADPRO-COND.OTF);
+    src: url(./fonts/MYRIADPRO-CONDIT.OTF);
+    src: url(./fonts/MyriadPro-Light.otf);
+    src: url(./fonts/MYRIADPRO-REGULAR.OTF);
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+
+/*geader*/
+header h1 {
+    font-size: 56px;
+    font-family: "Lato";
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix( 0.60657622078989,0,0,0.60779052654941,0,0);
+    -webkit-transform: matrix( 0.60657622078989,0,0,0.60779052654941,0,0);
+    -ms-transform: matrix( 0.60657622078989,0,0,0.60779052654941,0,0);
+  }
+  h1::after {
+      content: "";
+      display: block;
+      opacity: 65%;
+      width: 5%;
+      height: 5px;
+      background-color: rgb(221, 219, 219);
+      margin: 20px auto;
+  }
+  header p {
+        font-size: 16px;
+        font-family: "Myriad Pro";
+        color: rgb(60, 60, 60);
+        line-height: 1.5;
+        text-align: center;
+        max-width: 600px;
+        margin: 40px auto;
+    }
+/*section wodth photo*/
+section {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    white-space: inherit;
+    overflow: scroll;
+}
+section div {
+    width: 270px;
+    position: relative;
+}
+div img {
+    width: 100%;
+    height: 100%;
+}
+.picture:hover>img {
+    visibility: hidden;
+}
+.picture:hover>.hidden {
+    visibility: visible;
+}
+div .hidden{
+    position: absolute;
+    background-color: #18b5dc;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    text-align: center; 
+    visibility: hidden;
+}   
+div .hidden svg {
+    margin: 45% auto;
+}
+
+div h2 {
+        font-size: 18px;
+        font-family: "Myriad Pro";
+        color: rgb(40, 37, 40);
+        line-height: 1;
+        margin-top: 20px;
+        margin-bottom: 0;
+}
+div p {
+    margin: 6px 0 120px 0;
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(40, 37, 40);
+}
+      
+
+  
+  
