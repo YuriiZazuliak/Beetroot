@@ -1,0 +1,125 @@
+@font-face {
+  font-family: BebasNeue;
+  src: url("../fonts/bebas_neue/BebasNeue Light.otf");
+}
+@font-face {
+  font-family: BebasNeueRegular;
+  src: url("../fonts/bebas_neue/BebasNeue Regular.otf");
+}
+@font-face {
+  font-family: BebasNeueBold;
+  src: url("../fonts/bebas_neue/BebasNeue Bold.otf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #9789f9;
+  position: relative;
+  z-index: 5;
+}
+
+/*grid box and section1*/
+.grid-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80vw;
+  margin: 150px auto;
+  column-gap: 5%;
+}
+.grid-conteiner .section {
+  text-align: center;
+  background-color: #f5f4f9;
+  position: relative;
+  z-index: -2;
+  max-width: 320px;
+}
+.grid-conteiner .section-header {
+  box-sizing: border-box;
+  margin-top: 35px;
+}
+.grid-conteiner .section-header .section-header__price {
+  font-size: 60px;
+  font-family: "BebasNeue";
+  color: #181818;
+  text-transform: uppercase;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.grid-conteiner .section-header .section-header__price .section-header__dollar {
+  font-size: 27px;
+  font-family: "BebasNeue";
+  color: #181818;
+  text-transform: uppercase;
+}
+.grid-conteiner .section-header .section-header__price .section-header__hr {
+  font-size: 16px;
+  font-family: "BebasNeue";
+  color: #181818;
+  text-align: left;
+}
+.grid-conteiner .section-header .section-header__ui-ux {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 24px;
+  font-family: "BebasNeueRegular";
+  color: #181818;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.grid-conteiner .section-menu {
+  width: 50%;
+  margin: 65px auto;
+}
+.grid-conteiner .section-menu .section-menu__logo {
+  width: 30px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.grid-conteiner .section-menu .section-menu__menu-list {
+  margin: 35px auto;
+  text-align: left;
+  list-style-type: none;
+  padding-inline-start: 15px;
+}
+.grid-conteiner .section-menu .section-menu__menu-list .section-menu__menu-item {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #181818;
+  line-height: 3.313;
+  text-align: left;
+  position: relative;
+  z-index: 0;
+}
+.grid-conteiner .section-menu__menu-list::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  left: 0;
+  bottom: 10%;
+  background-color: white;
+  z-index: -1;
+  border-radius: 230px/100px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.grid-conteiner .section-button {
+  width: 60%;
+  height: 55px;
+  background-color: #6fcffb;
+  border-radius: 30px;
+  margin: auto auto -25px auto;
+}
+.grid-conteiner .section-button .section-button__text {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "BebasNeueBold";
+  color: white;
+  padding-top: 10%;
+}

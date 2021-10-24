@@ -1,0 +1,99 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+    background-color: cadetblue;
+}
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.wrapper {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    gap: 1rem;
+    .card {
+        border-radius: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        border: 2px solid black;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        position: relative;
+        background-color: rgb(161, 231, 252);
+        transition: 1s;
+        &__element:;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+{
+            text-align: left;
+            font-size: 25px;
+            padding: 10px 0;
+            margin-left: 3px;
+        }
+        &__central-logo {
+            text-align: center;
+            font-size: 150px;
+            margin: 0 auto 15px;
+        }
+        &__element-end {
+            text-align: right;
+            padding: 10px 3px;
+            font-size: 25px;
+        }
+        &__element-end::before {
+            content: "";
+            display: block;
+            background-image: url(../back.jpg);
+            background-position: center;
+            border: 0 solid rgba(255, 255, 255, 0);
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            visibility: hidden;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            transition-delay: 0.3s;
+        }      
+    }
+}
+.card:hover {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.card:hover .card__element-end::before {
+    visibility: visible;
+    z-index: 2;
+   /* transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;*/
+    transition-delay: 0.3s;
+}

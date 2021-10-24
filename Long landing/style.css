@@ -334,4 +334,88 @@ main .section2 img {
     font-size: 60px;
   }
 }
+
+/*section3*/
+.section3 {
+  width: 100%;
+  background-color: #70bfff;
+  padding-top: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section3 .section3__list {
+  margin-left: 115px;
+  margin-bottom: 150px;
+  height: 460px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  vertical-align: middle;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section3 .section3__list .list__item {
+  width: 400px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 10px #dedede;
+          box-shadow: 3px 3px 10px #dedede;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.section3 .section3__list .list__item .list-item__text {
+  width: 300px;
+  font-size: 20px;
+  font-family: "Raleway";
+  color: #262626;
+  font-weight: bold;
+  line-height: 1.35;
+  display: inline-block;
+  text-align: center;
+}
+
+.section3 .section3__list .list__item .list-item__img {
+  width: 49px;
+  height: 49px;
+  padding: 24px;
+  display: inline-block;
+}
+
+.list__item:nth-child(3) .list-item__text {
+  margin: auto;
+}
+
+.list-item__text::after {
+  content: "";
+  display: block;
+  background-color: #9d9d9d;
+  height: 100px;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+.section3-title {
+  background-image: url(./images/section3/img-copy.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 570px;
+  height: 600px;
+}
 /*# sourceMappingURL=style.css.map */

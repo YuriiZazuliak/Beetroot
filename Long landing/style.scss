@@ -1,3 +1,4 @@
+
 body {
     width: 100%;
     margin: 0;
@@ -289,3 +290,70 @@ main .section2 img {
       font-size: 60px;
   }
 }
+/*section3*/
+.section3 {
+    width: 100%;
+    background-color: #70bfff;
+    padding-top: 180px;
+    display: flex;
+    .section3__list {
+        margin-left: 115px;
+        margin-bottom: 150px;
+        height: 460px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        justify-content: space-between;
+        .list__item {
+            width: 400px;
+            height: 100px;
+            display: flex;
+            background-color: white;
+            box-shadow: 3px 3px 10px rgba(222, 222, 222, 50);
+            box-sizing: border-box;
+            position: relative;
+            .list-item__text {
+                width: 300px;
+                font-size: 20px;
+                font-family: "Raleway";
+                color: rgb(38, 38, 38);
+                font-weight: bold;
+                line-height: 1.35;
+                display: inline-block;
+                text-align: center;
+            }
+            .list-item__img {
+                width: 49px;
+                height: 49px;
+                padding: 24px;
+                display: inline-block;
+            }
+        }
+    }
+}
+.list__item:nth-child(3) .list-item__text {
+    margin: auto;
+}
+.list-item__text::after {
+    content: "";
+    display: block;
+    background-color: #9d9d9d;
+    height: 100px;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+.section3-title {
+    background-image: url(./images/section3/img-copy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 570px; 
+    height: 600px;
+    .section3-title__title {
+
+    }
+}
+
+
