@@ -28,12 +28,12 @@ p {
         position: relative;
         background-color: rgb(161, 231, 252);
         transition: 1s;
-        &__element:;
+        
         -webkit-transition: 1s;
         -moz-transition: 1s;
         -ms-transition: 1s;
         -o-transition: 1s;
-{
+        &__element {
             text-align: left;
             font-size: 25px;
             padding: 10px 0;
@@ -54,6 +54,8 @@ p {
             display: block;
             background-image: url(../back.jpg);
             background-position: center;
+            object-position: center;
+            object-fit: fill;
             border: 0 solid rgba(255, 255, 255, 0);
             border-radius: 10px;
             position: absolute;

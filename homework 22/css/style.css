@@ -37,8 +37,11 @@ p {
   -o-border-radius: 10px;
   position: relative;
   background-color: #a1e7fc;
-  -webkit-transition: 2s;
-  transition: 2s;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 .wrapper .card__element {
@@ -65,6 +68,10 @@ p {
   display: block;
   background-image: url(../back.jpg);
   background-position: center;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: fill;
+     object-fit: fill;
   border: 0 solid rgba(255, 255, 255, 0);
   border-radius: 10px;
   position: absolute;
@@ -77,8 +84,8 @@ p {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .card:hover {

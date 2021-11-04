@@ -168,6 +168,8 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 1.5vw;
   margin-top: 120px;
 }
@@ -183,19 +185,16 @@ body {
 .photos-conteiner .photos__item3 {
   height: 599px;
   display: inline-block;
-  float: left;
 }
 
 .photos-conteiner .photos__item4 {
   height: 475px;
   display: inline-block;
-  float: left;
 }
 
 .photos-conteiner .photos__item5 {
   height: 413px;
   display: inline-block;
-  float: left;
 }
 
 .photos-conteiner .photos__item6 {
