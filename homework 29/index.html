@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework 28</title>
+</head>
+<body>
+    <!--task 1-->
+<!--    <script>
+        let numb1 = Number(prompt("Enter a first number", 0));
+        let numb2 = Number(prompt("Enter a second number", 0));
+        let summ = 0;
+        for (let i = numb1; i < numb2; i++) {
+            summ = i + summ;
+        }
+        alert(`summa = ${summ}`);
+    </script>   -->
+    <!--task 2-->
+<!--    <script>
+        let p1 = prompt("Enter nmber 1");
+        let p2 = prompt("Enter nmber 2");
+        for (let index = p1; index <= p1; index--) {
+            if(p1 % index == 0 && p2 % index ==0) {
+                alert(`${index}`);
+                break;
+            }     
+        }
+        </script>  -->
+        <!--task 3-->
+<!--   <script>
+        let p1 = Number(prompt("Enter a number", 0));
+        for (let index = p1; index <= p1 && index > 0; index--) {
+            if(p1 % index == 0) {
+                console.log(index);
+            }            
+        }
+    </script>    --> 
+    <!--task 4-->
+<!--    <script>
+        let nmb1 = prompt("Enter big number", 0000);
+        alert(`count of numbers - ${nmb1.length}`);                  
+    </script>   -->
+    <!--task 5-->
+<!--   <script>
+        let nmbr10 = prompt("Enter 10 numbers with space","-1 -7 0 4 0 -6 5 9 45 2").split(" ");
+        console.log(nmbr10);
+        let minusNmbr = 0;
+        let plusNmbr = 0;
+        let zeroNmbr = 0;
+        let dobleNmbr = 0;
+        let index = 0;
+        while (index <=9) {
+            if(nmbr10[index] < 0) {
+                minusNmbr = 1 + minusNmbr; 
+                index = 1 + index;
+            } else {} 
+             if(nmbr10[index] > 0) {
+                plusNmbr = 1 + plusNmbr; 
+                index = 1 + index;
+            } else {}
+            if(nmbr10[index] == 0) {
+                zeroNmbr = 1 + zeroNmbr;
+                index = 1 + index;
+            } else {}
+            if((nmbr10[index] % 2) == 0) {
+            dobleNmbr = 1 + dobleNmbr;
+            } else {}
+        }
+    alert(`minus numbers count = ${minusNmbr}
+plus numbers count = ${plusNmbr}
+zero numbers count = ${zeroNmbr}
+even numbers count = ${dobleNmbr}`);
+    </script>   --> 
+    <!--task 6-->
+<!--   <script>
+        let res = 0;
+        do{
+        let nmbr1 = Number(prompt("Enter first number", 0));
+        let nmbr2 = Number(prompt("Enter second number", 0));
+        let icon = prompt("Enter your action", );       
+            alert(`your result is: ${res = eval(nmbr1+icon+nmbr2)}`);
+        } while (confirm("do you wont again?"));    
+    </script>  --> 
+    <!--task 7-->
+<!--    <script>
+        let nmbr1 = prompt("Enter a number", ).split("");
+        let steps = Number(prompt("Enter count of steps",));
+        console.log(nmbr1, steps);
+        for (let index = 0; index < steps; index++) {           
+            nmbr1.push(nmbr1.shift());
+        }
+        alert(`Your number is: ${nmbr1}`);
+    </script>   -->
+    <!--task 8-->
+<!--    <script>
+        let dayOfWeek = ("Monday Tuesday Wednesday Thursday Friday Saturday Sunday").split(" ");
+        console.log(dayOfWeek); 
+        let day = 0;
+        do {                                         
+            if(day <=6) {
+               day = day + 1;             
+            } else {}
+            if(day >= 7) {
+                day = 0;
+            } else{}       
+        } while (confirm(`Day of the week: ${dayOfWeek[day]} do you want to see the next day?`)); 
+    </script>     -->
+    <!--task 9-->
+<!--    <script>
+        let nmb1 = 1;
+        for (let index = 0; index <= 11; index++) {       
+            if( index >= 11) {
+                index = 1;
+                nmb1 = 1 + nmb1;
+            } else {} 
+            if(nmb1 > 9) {
+                break;
+            } else {}      
+            console.log(`${nmb1} * ${index} = ${nmb1 * index}`);
+        }
+    </script>   -->
+    <!--task 10-->
+    <script>
+        alert("Загадайте любе число від 0 до 100");
+        let num1 = 0;
+        let writeNumb = 50;
+        let lap = 2;
+        do {
+            num1 = prompt(`Ваше число больше или меньше ${writeNumb.toFixed()}?
+            1. Больше.
+            2.Меньше.
+            3.Ето мое число`);
+            console.log(num1);
+             lap += lap; 
+            if(num1 == 1) {
+                writeNumb = (writeNumb + (100 / lap));
+
+              } else if (num1 == 2) {
+                writeNumb = (writeNumb - (100 / lap));
+               
+              } else if (num1 == 3) {
+                  alert("Ta-Dam!");
+              } else { break;
+            }
+        } while (num1 < 3);
+            
+            
+
+    </script>
+</body>
+</html>
