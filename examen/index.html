@@ -7,16 +7,70 @@
     <meta name="description" content="Exam work Yurii">
     <link rel="shortcut icon" href="./css/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--Дубликаты-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--Дубликаты-->
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--Дубликаты-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Дубликаты-->
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <title>Examen</title>
 </head>
 <body class="body">
+<!--
+Мои коментарии удаляются после исправления !
+
+  + PixelPerfect :
+    - просто прекрассно.
+  + Адаптив: - так себе.
+    - первым должноо ужиматся ето Пустое пространство, до адекватных отступов под конкретный размер.
+    А только потом уже должен ужиматся/адаптироватся контент страници
+
+  + БЕМ :
+    - название классов - в целом нормально. В названиях классов - нужно учитывать что они буду
+        переиспользоватся тобой и твоими колегами. И старатся называть класс одним словом без разделителей.
+        @Info: https://ru.bem.info/methodology/quick-start/.
+        Класс должен отвечать на вопрос "кто ты? / что это?" и без лишних приставок
+    - структура в SCSS - не как не связанно с БЕМ.
+     БЕМ - предпологает одноуровневую
+     вложенность(header__logo, header__logo-img) с привязкой к блоку. А не строгой вложенностью елементов.
+
+  + cod-style:
+    - отступы по вложенности - не брезгуй авто-выравниванием кода. Его можно поднастроить - только над гуглить.
+    - Дубликаты подключения шрифтов - достаточно один раз его сделать.
+    + style.scss - ужас - трудно разобратся.
+        - Адаптив должен быть в отдельном файле.
+        - стили на Абсолютах
+  + other :
+    - .gitignore - Используй для соблюдения чистоты проекта. Очень не красиво когда твои конфиги проекта попадают ругим.
+        p/s: Как с своей религией в чужой монастырь.
+    + Структура проекта
+        - стили в перемешку. css и scss - должны находится в разных папках.
+            Потому что потом нужно будет собирать все ети файлы и отправлять на сервер.
+            Вообщем будет слоожно собирать нужные файлы.
+        - Картинки должны быть не в стилях, а рядом.
+    - CEO - могбы добавить больше мета-тегов - чисто ради прикола ))
+    - помимо svg - попробуй использовать библиотеку иконок(https://habr.com/ru/company/edison/blog/481420/)
+
+-->
     <header class="header">
+        <!--
+        + Адаптив:
+            - 1220 - не стоило увеличиавать поисковую строку. К томуже у кнопки текст не поцентру.
+                Пускай она оставалась техже размеров. Но когда уже растояние по бокам стало
+                меньше красивого отступа (к примеру 50рх). Тогда уже просто ужималбы ее.
+                А на следуйшем шаге уже просто 50рх меняешь на 20рх.
+            - меню - Кнопка однозначно заметна - как и пункты меню ))
+        + Проблема в самом названи етогоменю. Когда на него нажимаешь
+            -  выделяется розовым весь блок
+            - текст скакает
+            - следуйшие нажатие на синюю рамку меню - уменьшает текст
+        + БЕМ :
+            - норм
+        + cod-style:
+            - отступы по вложенность должны быть
+        + other :
+            - помимо svg - попробуй использовать библиотеку иконок(https://habr.com/ru/company/edison/blog/481420/)
+        -->
         <div class="header__backgroud-area"> 
         <section class="header__logo-n-search">
             <div class="header__logo">
@@ -25,7 +79,7 @@
                 </a>
             </div>
             <form class="header__search" action="#" method="get">
-                <label  for="#search"></label>
+                <label  for="#search"></label> <!-- # - тут не нужен-->
                 <input class="header__search-window" id="search" type="search" placeholder="Search Your Travel Destination">
                 <button class="header__search-button button" type="submit">
                     SEARCH
@@ -42,7 +96,7 @@
                       </svg>
                 </button>
             </form>  
-        </section>
+        </section><!-- отступы по вложенности -->
             <div class="scroll-down">
                 <a class="scroll-down__link" href="#scroll-down"><img class="scroll-down__img" src="./css/img/scroll-down.png" alt="scroll_down"> </a>
             </div>
@@ -62,7 +116,26 @@
     </header>
     <main class="main">
         <section class="explore" id="who-we-are">
+            <!--
+            + Адаптив:
+                - 1445 - картинки слишком амленькие а по бокам все еще много места.
+                - анимация хорошо.
+            + БЕМ :
+                - вроде норм, но местами намудрил до ужаса.
+                - название классов не удобные/не говорящие, и вводят в заблуждение(explore__text-block text-block")
+                    но внутри не текст, а другие елементы
+            -->
             <div class="explore__text-block text-block">
+                <!-- тут ок.
+                 - explore__text-block - название элемента блока от explore
+                 - text-block - название нового блока
+                 дальше... Намудрил...
+                 explore__title - название элемента от блока explore.
+                 Но explore__title вложен в новый блок text-block. Но все равно привязан к блоку explore
+                 и етот же елемент связан с новым блоком text-block через text-block__title
+
+                 фигня какаето.
+                  -->
                 <h2 class="explore__title text-block__title">
                     Why Choose Us
                 </h2>
@@ -80,6 +153,14 @@
             </div>
         </section>
         <section class="icon-section">
+            <!--
+            + Адаптив: - прекрассно
+                - отступы адекватны, все вовремя прячется, и перестраивается.
+                - отступы боковые не большие и не маленькие.
+            + БЕМ :
+                - вроде норм
+                - название классов старайся писать одним словом
+            -->
             <div class="icon-section__icon-cover">
                 <svg class="icon-section__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="57" height="57" viewBox="0 0 57 57">
                     <defs>
@@ -94,8 +175,7 @@
                 </svg>
                 <h3 class="icon-section__text">Search Places</h3>
             </div>
-            <div class="icon-section__grafic-line">
-            </div>
+            <div class="icon-section__grafic-line"></div>
             <div class="icon-section__icon-cover">
                 <svg class="icon-section__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="60" height="60" viewBox="0 0 60 60">
                     <defs>
@@ -110,7 +190,7 @@
                   </svg>
                   <h3 class="icon-section__text">Select Places</h3>
             </div>
-             <div class="icon-section__grafic-line">
+             <div class="icon-section__grafic-line"><!-- в таких ситуациях, пиши в одну строку. тогда сразу видно что он пуст-->
             </div>
             <div class="icon-section__icon-cover">
                 <svg class="icon-section__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="60" height="60" viewBox="0 0 60 59">
@@ -128,6 +208,12 @@
             </div>
         </section>
         <section class="spain-block" id="what-we-do">
+            <!--
+            + Адаптив: - норм
+                - с 800рх -  квадрат лучше центрировать
+            + БЕМ :
+                - все тоже самое
+            -->
             <div class="spain-block__text-block">
                 <h4 class="spain-block__title-spain">Spain</h4>
                 <h3 class="spain-block__title">
@@ -142,6 +228,12 @@
             </div>
         </section>
         <section class="spain-block" id="travel-with-us">
+            <!--
+            + Адаптив: - норм
+                - с 800рх -  квадрат лучше центрировать
+            + БЕМ :
+                - все тоже самое
+            -->
             <div class="spain-block__text-block">
                 <h4 class="spain-block__title-spain">Spain</h4>
                 <h3 class="spain-block__title">
@@ -158,6 +250,10 @@
     </main>
     <footer class="footer">
         <section class="comments" id="scroll-down">
+            <!--
+            + Адаптив: - норм
+                - текст мелковат
+            -->
             <h2 class="comments__what-our-touristisay">What Our Tourist Say</h2>
             <div class="coment-item">
                 <img class="coment-item__photo" src="./css/img/man.png" alt="man">
