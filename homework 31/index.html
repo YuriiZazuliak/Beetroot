@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework 31</title>
+</head>
+<body>
+<!--task 1-->
+<!--  <script>
+    let carInform = {
+        name: "Aston_Martin",
+        model: "Lagonda",
+        year: 1982,
+        midSpeed: 67,
+    }
+    function carDisplay() {
+        for(let key in carInform){
+            alert(`${key} : ${carInform[key]}`);
+        };
+    }
+    //carDisplay();
+    function time() {
+        let far = prompt("Enter your distance",);
+        let timeNeed = ((far / carInform.midSpeed) + Math.floor((far / carInform.midSpeed) / 4)).toFixed(2);      
+        alert(`You need ${timeNeed} hours`);
+    }
+    time();
+</script>  -->
+<!--task 2-->
+<!--  <script>
+    let drob = {
+        numenator: 2,
+        denominator: 6,
+    }
+    let numer = Number(prompt("Enter numenator",));
+    let denom = Number(prompt("Enter denominator",));
+    let newDrob = {
+            numenator: numer,
+            denominator: denom,
+        }
+    let result = {
+        nmb1: 1,
+        nmb2: 1,
+    }
+    function plus() {
+        result.nmb1 = (drob.numenator + newDrob["numenator"]);
+        result.nmb2 = (drob.denominator + newDrob["denominator"]); 
+        for (let index = result.nmb1; index <= result.nmb1 && index > 0; index--) {
+            if(result.nmb1 % index == 0 && result.nmb2 % index == 0) {
+                result.nmb1 = result.nmb1 / index;
+                result.nmb2 = result.nmb2 / index;
+                break;
+            } else {}           
+        }
+     
+            alert(`${drob.numenator}/${drob.denominator} + ${numer}/${denom} = ${result.nmb1}/${result.nmb2}`); 
+        
+           
+    }
+    plus();
+    function minus() {
+        result.nmb1 = (drob.numenator - newDrob["numenator"]);
+        result.nmb2 = (drob.denominator - newDrob["denominator"]); 
+        for (let index = result.nmb1; index <= result.nmb1 && index > 0; index--) {
+            if(result.nmb1 % index == 0 && result.nmb2 % index == 0) {
+                result.nmb1 = result.nmb1 / index;
+                result.nmb2 = result.nmb2 / index;
+                break;
+            } else {}           
+        }
+      
+            alert(`${drob.numenator}/${drob.denominator} - ${numer}/${denom} = ${result.nmb1}/${result.nmb2}`); 
+        
+    }
+    minus();
+    function multiplication() {
+        result.nmb1 = (drob.numenator * newDrob["numenator"]);
+        result.nmb2 = (drob.denominator * newDrob["denominator"]); 
+        for (let index = result.nmb1; index <= result.nmb1 && index > 0; index--) {
+            if(result.nmb1 % index == 0 && result.nmb2 % index == 0) {
+                result.nmb1 = result.nmb1 / index;
+                result.nmb2 = result.nmb2 / index;
+                break;
+            } else {}           
+        }
+        
+            alert(`${drob.numenator}/${drob.denominator} * ${numer}/${denom} = ${result.nmb1}/${result.nmb2}`); 
+        
+        
+    }
+    multiplication();
+    function chunking() {
+        result.nmb1 = (drob.numenator + newDrob["denominator"]);
+        result.nmb2 = (drob.denominator + newDrob["numenator"]); 
+        for (let index = result.nmb1; index <= result.nmb1 && index > 0; index--) {
+            if(result.nmb1 % index == 0 && result.nmb2 % index == 0) {
+                result.nmb1 = result.nmb1 / index;
+                result.nmb2 = result.nmb2 / index;
+                break;
+            } else {}           
+        }
+            alert(`${drob.numenator}/${drob.denominator} / ${numer}/${denom} = ${result.nmb1}/${result.nmb2}`); 
+        
+    }
+    chunking();
+    function rounded() {
+        let a = numer;
+        let b = denom;
+        for (let index = a; index <= a && index > 0; index--) {
+            if(a % index == 0 && b % index == 0) {
+                a = a / index;
+                b = b / index;              
+                alert(`Округление ${numer}/${denom} = ${a}/${b}`);
+                break;
+            } else {}                        
+        }       
+    }
+    rounded()
+</script>   -->
+<!--task 3-->
+<script>
+    let timeNow = {
+        hour: "5",
+        minute: "24",
+        seconds: "58",
+    }
+// function rightTime() {
+//     if(timeNow.seconds >= 60) {
+//         timeNow.minute = +timeNow.minute + 1;
+//         timeNow.seconds = +timeNow.seconds - 60;
+//     } else {} 
+//     if(timeNow.minute >= 60) {
+//         timeNow.hour = +timeNow.hour + 1;
+//         timeNow.minute = +timeNow.minute - 60;
+//     } else {}
+//     if(timeNow.hour >= 24) {
+//         timeNow.hour = +timeNow.hour - 24;
+//     } else {} 
+//     if(timeNow.seconds < 10) {
+//         timeNow.seconds = "0" + timeNow.seconds;
+//     } else {}
+//     if(timeNow.minute < 10) {
+//         timeNow.minute = "0" + timeNow.minute;
+//     } else {}
+//     if(timeNow.hour < 10) {
+//         timeNow.hour = "0" + +timeNow.hour;
+//     }
+// }   
+
+function screen() {
+    alert(`${timeNow.hour}:${timeNow.minute}:${timeNow.seconds}`);
+}
+checktime();
+//rightTime()
+screen();
+function secChange() {
+    let sec = Number(prompt("How much seconds",));
+    timeNow.seconds = +timeNow.seconds + sec;
+}
+secChange();
+//rightTime();
+
+
+function checktime() {
+for (let index = 0; index = +timeNow.seconds && +timeNow.seconds >= 60; index - 60) {
+    timeNow.seconds = +timeNow.seconds - 60;
+    timeNow.minute = +timeNow.minute + 1;
+}
+for (let index = 0; index = +timeNow.minute && +timeNow.minute >= 60; index - 60) {
+    timeNow.minute = +timeNow.minute - 60;
+    timeNow.hour = +timeNow.hour + 1;
+}
+for (let index = 0; index = +timeNow.hour && +timeNow.hour >= 24; index - 24) {
+    timeNow.hour = +timeNow.hour - 24;   
+}
+if(timeNow.seconds < 10) {
+        timeNow.seconds = "0" + timeNow.seconds;
+    } else {}
+if(timeNow.minute < 10) {
+        timeNow.minute = "0" + timeNow.minute;
+    } else {}
+if(timeNow.hour < 10) {
+        timeNow.hour = "0" + +timeNow.hour;
+    }
+}
+checktime();
+screen();
+function minChange() {
+    let min = Number(prompt("How much minuts",));
+    timeNow.minute = +timeNow.minute + min;
+}
+minChange();
+checktime();
+screen();
+function hourChange() {
+    let hor = Number(prompt("How much hours",));
+    timeNow.hour = +timeNow.hour + hor;
+}
+hourChange();
+checktime();
+screen();
+</script>
+</body>
+</html>
