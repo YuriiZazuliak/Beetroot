@@ -1,9 +1,15 @@
 @import url(./reset.css);
 
+/*
+- Адаптив от основных стиле должен быть отдельным фйлом.
+- трудно разобратся
+- Абсолюты - ето ужас. их используй когда действительно нет выбора.
+*/
+
 .body {
     width: 100%;
     max-width: 1800px; 
-    overflow-x: hidden;
+    overflow-x: hidden; /* иногда ето может ссыграть злую шутку етак часа на 3-4  */
 }
 
 /*header*/
@@ -23,11 +29,12 @@
             flex: 1 1 auto;           
         .header__logo-n-search {
             text-align: center;
-            position: absolute;
+            position: absolute; /* Плохо */
             width: 650px;
             top: 47%;
             left: 50%;
             transform: translate(-50%, -50%);
+            /* компилятор препроцессора сделает ето вместо тебя */
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
@@ -56,7 +63,7 @@
             border: 2px solid white;
             width: 100%;
             .header {
-    width: 100%;
+    width: 100%; /* выравнивание кода */
     height: 100vh;
     background-image: url(./img/first-background.png);
     display: flex;
@@ -68,9 +75,9 @@
             width: auto;
             box-sizing: border-box;
             flex: 1 1 auto;           
-        .header__logo-n-search {
+        .header__logo-n-search { /* через & */
             text-align: center;
-            position: absolute;
+            position: absolute;/* плохо */
             width: 650px;
             top: 47%;
             left: 50%;
@@ -80,15 +87,15 @@
             -ms-transform: translate(-50%, -50%);
             -o-transform: translate(-50%, -50%);
 
-            .header__logo {
+            .header__logo {  /* через & - и на уровень выше */
                 width: 100%;
 
-            .header__logo-link {
+            .header__logo-link { /* через & - и на уровень выше */
                 padding: 15px;
-            .header__logo-img {
+            .header__logo-img { /* через &  - и на уровень выше */
                 width: 320px ;
             }
-            }
+            }/* выравнивание кода */
         }
         }
     }
@@ -149,7 +156,7 @@
         margin-left: 5px;   
         margin-right: 15px;
             }
-        }
+        }/* выравнивание кода */
 .button:hover {
     background-color: rgb(21, 49, 173);
 }
@@ -157,7 +164,7 @@
     background-color: rgb(10, 13, 31);;
 }
 .scroll-down {
-    position: absolute;
+    position: absolute;/* плохо */
     top: 85%;
     left: 50%;
     transform: translate(-50%, -85%);
@@ -175,7 +182,7 @@
 .burger-menu {
     width: 70px;
     text-align: center;
-    position: absolute;
+    position: absolute; /* тут можно  */
     visibility: hidden;
     &__item1 {
         width: 100%;
@@ -196,6 +203,7 @@
     }
 }
 .nav-bar {
+    /* тут БЕМ все четенько*/
     display: flex;
     justify-content: space-between;
     justify-self: end;
@@ -255,7 +263,7 @@
         z-index: 1;
         background-color: #5474fd;
         padding: 0 10%;
-    }
+    }/* выравнивание кода */
             height: 60px;
             min-height: 40px;
             font-size: 26px;
@@ -310,7 +318,7 @@
     background-color: rgb(10, 13, 31);;
 }
 .scroll-down {
-    position: absolute;
+    position: absolute; /* плохо */
     top: 85%;
     left: 50%;
     transform: translate(-50%, -85%);
@@ -325,7 +333,7 @@
 .scroll-down__img {
     margin-bottom: 30px;
 }
-.burger-menu {
+.burger-menu { /* что за дубликаты */
     width: 70px;
     text-align: center;
     position: absolute;
@@ -957,7 +965,7 @@
             display: flex;
             margin: 30px auto 0;
             box-sizing: border-box;
-            position: absolute;
+            position: absolute;/* плохо */
             visibility: hidden;
             .explore__left-img {
                 margin: 0 5px;
@@ -1134,7 +1142,7 @@
     &__grafic-line::before {
         content: "";
         display: block;
-        position: absolute;
+        position: absolute;/* плохо */
         top: 0;
         left: 50%;
         transform: translate(-50%, 0);
@@ -1785,7 +1793,7 @@
         &__photo {
             width: 30%;
             object-fit: cover;
-            position: absolute;
+            position: absolute;/* плохо */
             visibility: hidden;
         }
         &__photo:hover {
