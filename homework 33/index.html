@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework 34</title>
+</head>
+<body>
+    <!--task 1-->
+    <!-- <script>
+        class Circle {
+            constructor(radius) {
+                this.radius = radius;
+            }
+            get getRadius() {
+                return(`Radius is ${this.radius}`);
+            }
+            set setRadius(value) {
+                value = prompt("Enter radius",);
+                this.radius = value;
+                console.log(`Radius is ${this.radius}`);
+            }
+            get diametr() {
+                return(`diametr = ${this.radius * 2}`);
+            }
+            Area() {
+                console.log(`Area of circle is ${(3.14 * this.radius)**2}`);
+            }
+            CircleLenght() {
+                console.log(`Circle lenght is ${2 * (3.14 * this.radius)}`);
+            }
+}
+let newCircle = new Circle(6);
+newCircle.Area();
+newCircle.CircleLenght();
+    </script> -->
+
+<!-- Реалізуй клас, що описує канцелярський маркер. У класі повинні бути такі компоненти:
+
+поле, яке зберігає колір маркера;
+поле, яке зберігає кількість чорнил у маркері (у відсотках);
+метод для вводу (приймає рядок і виводить текст відповідним кольором; текст виводиться до тих пір, поки в 
+маркері є чорнило; один не пробільний символ — це 0,5% чорнил у маркері).
+Реалізуй клас, що описує маркер, який можна перезаправляти. Успадкуй цей клас від простого маркера і додай 
+метод для заправки.
+
+Продемонструй роботу написаних методів. -->
+<p id="fillId"></p>
+<p id="qwer"></p>
+
+    <script>
+     
+        class Marker {
+            constructor(color, quantity, inputFillId){              
+                this.color = color;
+                this.quantity = quantity * 2;
+                this.fill = this._findFill(inputFillId);
+            }
+            write(text) {
+                let newString = "";
+                for (let index = 0; index < text.length; index++) {                   
+                    if(text[index] == " ") {
+                        this.quantity = this.quantity + 1;                   
+                    }
+                    if(index >= this.quantity) {
+                        break;
+                    }
+                    newString = newString + text[index];              
+                }           
+
+                this.fill.innerHTML = newString;
+                this.fill.style.color = this.color;
+                console.log("newString", newString.length);
+            }
+            _findFill(itemId){
+              return  document.getElementById(itemId);
+
+            }
+        }
+let pen = new Marker("red", 5, "fillId");
+pen.write("1 34 5 6 7 8 9 0wereeterter");
+
+let pen2 = new Marker("green", 20, "qwer");
+pen2.write("Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, cupiditate suscipit Nobis vel dolor sit ducimus debitis autem, incidunt magnam.");
+console.log("pen2", pen2);
+    </script>
+</body>
+</html>

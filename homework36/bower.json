@@ -1,0 +1,22 @@
+{
+  "name": "homework36",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Zozylia <zozyliazozo22@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/YuriiZazuliak/Beetroot",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+  }
+}

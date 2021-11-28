@@ -52,8 +52,10 @@
             if(scndNmb !== Number || scndNmb == frstNmb) {
                 scndNmb = frstNmb;
                 alert(`Площа вашого квадрата = ${frstNmb * scndNmb}`);
-            } else {
+            } else if (a == Number && b == Number) {
             alert(`Площа вашого прямокутника = ${frstNmb * scndNmb}`);
+            } else {
+                alert(`Ця техніка заскладна для твого мозку)))`)
             }
           }
           calcPloshcha();

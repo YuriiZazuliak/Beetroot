@@ -1,0 +1,34 @@
+.navBar {
+    height: 15vh;
+    background-color: rgb(155, 134, 102);
+    border: 2px solid rgb(241, 204, 148);
+    display: flex;
+    justify-content: space-evenly;
+}
+.navBar__button {
+    width: 20%;
+    height: 90%;
+    margin: auto;
+    font-size: 30px;
+    color: rgb(124, 214, 218);
+    background-color: rgb(64, 117, 119);
+    border: 2px solid rgb(40, 77, 78);;
+}
+.navBar__button:hover {
+    color: rgb(108, 172, 175);
+    background-color: rgb(41, 74, 75);
+    border: 2px solid rgb(30, 48, 48);
+}
+.navBar__button:active {
+    color: rgb(108, 172, 175);
+    background-color: rgb(23, 68, 70);
+    border: 2px solid rgb(17, 43, 43);
+}
+.tabs {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid rgb(67, 191, 240);
+    background-color: rgb(131, 205, 235);
+    color: #407577;
+    padding: 30px;
+}

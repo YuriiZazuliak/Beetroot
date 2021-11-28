@@ -1,0 +1,43 @@
+.navBar {
+  height: 15vh;
+  background-color: #9b8666;
+  border: 2px solid #f1cc94;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navBar__button {
+  width: 20%;
+  height: 90%;
+  margin: auto;
+  font-size: 30px;
+  color: #7cd6da;
+  background-color: #407577;
+  border: 2px solid #284d4e;
+}
+
+.navBar__button:hover {
+  color: #6cacaf;
+  background-color: #294a4b;
+  border: 2px solid #1e3030;
+}
+
+.navBar__button:active {
+  color: #6cacaf;
+  background-color: #174446;
+  border: 2px solid #112b2b;
+}
+
+.tabs {
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid #43bff0;
+  background-color: #83cdeb;
+  color: #407577;
+  padding: 30px;
+}
+/*# sourceMappingURL=style.css.map */

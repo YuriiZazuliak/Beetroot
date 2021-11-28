@@ -1,0 +1,105 @@
+.open {
+    width: 40%;
+    height: 80px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: blanchedalmond;
+    border: 2px solid rgb(141, 58, 224);
+    background-color: rgb(182, 132, 231);
+    display: block;
+    margin: 15px auto;
+}
+.open:hover {
+    border: 2px solid rgb(185, 143, 228);
+    background-color: rgb(183, 154, 212);
+}
+.open:active {
+    border: 2px solid rgb(127, 33, 221);
+    background-color: rgb(163, 96, 230);
+}
+.modalSection {
+    width: 80%;
+    padding: 3%;
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 10%;
+    border: 2px solid rgb(206, 243, 189);
+    background-color: yellowgreen;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;  
+    &__text {
+        font-size: 40px;
+        color: rgb(59, 98, 214);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 5px;
+    }
+    &__button {
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        color: blanchedalmond;
+        border: 2px solid rgb(141, 58, 224);
+        background-color: rgb(182, 132, 231);
+        display: block;
+        margin: 0 0 0 auto;
+    }
+    &__button:hover {
+        border: 2px solid rgb(112, 37, 187);
+        background-color: rgb(145, 99, 192);
+    }
+    &__button:active {
+        border: 2px solid rgb(79, 5, 153);
+        background-color: rgb(97, 54, 141);
+    }
+}
+
+
+.lightButton {
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        color: blanchedalmond;
+        border: 2px solid rgb(31, 226, 151);
+        background-color: rgb(125, 238, 176);
+        display: block;
+        margin: 0 auto;
+}
+.lightButton:hover {
+    border: 2px solid rgb(23, 187, 124);
+    background-color: rgb(87, 190, 134);
+}
+.lightButton:active {
+    border: 2px solid rgb(15, 160, 104);
+    background-color: rgb(65, 151, 104);
+}
+.lightsWrapper {
+    width: 400px;
+    margin: 15px auto;
+    border: 2px solid rgb(235, 144, 144);
+    border-radius: 15%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+    text-align: center;
+    background-color: burlywood;
+    &__light {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: black;
+        margin: 15px 10px;
+        display: inline-block;
+}
+}

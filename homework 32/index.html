@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 32</title>
+</head>
+<body>
+    <!--task 1-->
+    <!-- <script>
+        let buyList = [
+            {
+                name: "milk",
+                value: "2",
+                done: "no",
+            },
+            {
+                mane: "bread",
+                value: "1",
+                done: "yes",
+            },
+            {
+                mane: "tomatos",
+                value: "5",
+                done: "no",
+            },
+            {
+                mane: "pasta",
+                value: "3",
+                done: "yes",
+            },
+            {
+                mane: "chiken",
+                value: "1",
+                done: "no",
+            }
+        ];
+        
+        buyList.sort(function (a, b) {
+            if((a.done) > (b.done)) {
+                return 1;
+            } else if((a.done) < (b.done)) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
+    console.log(buyList);
+    let NewItem = {};
+    ProductExist = false;
+    function additem(buyList) {
+        NewItem.name = prompt("Enter new item",);
+        NewItem.value = Number(prompt("Enter new value",));
+        for (let index = 0; index < buyList.length; index++) {
+            if(NewItem.name === buyList[index].name && buyList[index].done === "no") {
+                buyList[index].value = NewItem.value + Number(buyList[index].value);
+                ProductExist = true;
+            } else {} 
+        }
+        if(ProductExist == false) {
+                NewItem.done = "no";
+                buyList.push(NewItem);
+            }  
+    }
+    additem(buyList);
+    buyList.sort(function (a, b) {
+            if((a.done) > (b.done)) {
+                return 1;
+            } else if((a.done) < (b.done)) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
+    console.log(buyList);
+    function buyDone(buyList) {
+        let buyItem = prompt("Enter bout product",);
+        for (let index = 0; index < buyList.length; index++) {
+           if(buyList[index].name === buyItem) {
+            buyList[index].done = "yes"
+           }
+            
+        }
+    }
+    buyDone(buyList) 
+    console.log(buyList);
+    
+    </script> -->
+    <!--task 2-->
+    <!-- <script>
+        let check = [
+        {
+                name: "milk",
+                value: "2",
+                prise: "13.5",
+            },
+            {
+                mane: "bread",
+                value: "1",
+                prise: "17.4",
+            },
+            {
+                mane: "tomatos",
+                value: "5",
+                prise: "46",
+            },
+            {
+                mane: "pasta",
+                value: "3",
+                prise: "73",
+            },
+            {
+                mane: "chiken",
+                value: "1",
+                prise: "84.5",
+            }
+        ];
+        function checkScreen(check) {
+            let price = 0;
+            for(let index = 0; index < check.length; index++) {
+                price = price + (Number(check[index].value) * Number(check[index].prise));                
+            }
+            check.push(price);
+            console.log(check);
+        }
+        //checkScreen(check);
+        
+        function expensiveItem(check) {
+            let mostExpensItem = check[0];
+            for (let index = 0; index < check.length; index++) {
+                if(mostExpensItem.prise <= check[index].prise) {
+                    mostExpensItem = check[index];
+                }               
+            }
+            console.log(mostExpensItem);
+        }
+        //expensiveItem(check);
+
+        function niddlePrice (check) {
+            let midPrice = 0;
+            for (let index = 0; index < check.length; index++) {
+                midPrice = midPrice + Number(check[index].prise);               
+            }
+            midPrice = midPrice / check.length
+            console.log(`Middle price of item is - ${midPrice}`);
+        }
+        niddlePrice (check);
+    </script> -->
+     <!--task 3-->
+     <script>
+         
+     </script>
+</body>
+</html>
