@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
     cssmin = require('gulp-minify-css'),
-    imagemin = require('gulp-imagemin'),
+    //imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
@@ -113,19 +113,19 @@ var gulp = require('gulp'),
 
     gulp.task('watch', function(){
         watch([path.watch.html], function(event, cb) {
-            gulp.start('html:build');
+            gulp.series('html:build');
         });
         watch([path.watch.style], function(event, cb) {
-            gulp.start('style:build');
+            gulp.series('style:build');
         });
         watch([path.watch.js], function(event, cb) {
-            gulp.start('js:build');
+            gulp.series('js:build');
         });
-        watch([path.watch.img], function(event, cb) {
-            gulp.start('image:build');
-        });
+        //watch([path.watch.img], function(event, cb) {
+        //    gulp.series('image:build');
+        //});
         watch([path.watch.fonts], function(event, cb) {
-            gulp.start('fonts:build');
+            gulp.series('fonts:build');
         });
     });
 

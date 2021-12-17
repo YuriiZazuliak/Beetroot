@@ -32,3 +32,9 @@ document.addEventListener("keydown", function(event) {
     });
 //Task 2
 
+
+
+
+//Task 3
+
+

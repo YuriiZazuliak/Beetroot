@@ -1,0 +1,216 @@
+body {
+    max-width: 1600px;
+    margin: auto;
+}
+//header
+.header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(243.43deg, rgba(126, 90, 255, 0.9), rgba(85, 183, 255, 0.9));
+    z-index: -1;
+    box-sizing: border-box;
+}
+.header {
+    position: relative;   
+    background-image: url(../img/header-img.png);
+ //   background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+//navigation
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10%;
+    position: fixed;
+    width: 100%;
+    max-width: 1600px;
+    box-sizing: border-box;
+  //  background: linear-gradient(243.43deg, rgba(126, 90, 255, 0.6), rgba(85, 183, 255, 0.6));
+    top: 0;
+    z-index: 5;
+    &__icon {
+        width: 240px;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        width: 50%;
+        
+    }
+    &__social {
+        align-self: center;
+       
+    }
+}
+.navBar {
+    background: linear-gradient(243.43deg, rgba(126, 90, 255, 0.8), rgba(85, 183, 255, 0.8));
+}
+//menu
+.navbar__href {
+    display: inline-block;
+    height: 100%;
+    align-content: center;
+    margin: auto 10px;   
+}
+.navbar__a {
+    text-decoration: none;
+    color: white;
+
+}
+.navbar__nav-item::before {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 15px;
+}
+.navbar__nav-item {
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    align-self: center;
+    color: white;
+    margin: auto 0 auto 25px;
+    text-decoration: none;
+}
+.navbar__nav-item:active::before {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 15px;
+    background-color: white;
+}
+.navbar__nav-item:hover::before {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 15px;
+    background-color: white;
+}
+
+
+
+.header__content {
+    text-align: center;
+    color: white;
+    padding-top: 250px;
+}
+
+
+.header__content .slick-dots {
+
+}
+.header__content .slick-dots {
+    position: absolute;
+    left: 95%;
+    height: 210px;
+    width: 10px;
+    top: 270px;
+}
+.header__content  .slick-dots li button::before {
+    content: "";
+    opacity: 0.25;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.header__content  .slick-dots .slick-active button::before {
+    background-color: white;
+}
+.header__content  .slick-dots li {
+    display: block;
+    margin-top: 40px;
+    right: 0;
+   // position: absolute;
+   // left: 50px;
+}
+
+
+
+.text {
+    margin-top: 100px;
+    position: relative;
+    &__title {
+        font-family: "Montserrat";
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 98px;
+        letter-spacing: 0.1em;
+    }
+    &__text {
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.3em;
+
+    }
+}
+.scrol {
+    position: absolute;
+    right: 40px;
+    top: 32%;
+    &__circle {
+        display: block;
+        width: 9px;
+        height: 9px;
+        border: 1px solid white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        margin-top: 35px;
+}
+}
+.scrol__circle:hover {
+    background-color: white;
+}
+.goDown {
+    text-align: center;
+    &__icon {
+        margin: 240px auto 50px;
+
+    }
+}
+.goDown__icon:hover {
+    fill: wheat;
+}

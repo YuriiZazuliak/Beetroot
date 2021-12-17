@@ -1,0 +1,109 @@
+body {
+   padding-top: 45px;
+   margin: 0;
+   background-color: blanchedalmond;
+   overflow-x: hidden;
+}
+.section1 {
+    text-align: center;
+   &__smolText {
+        font-size: 10px;
+        font-weight: 300;
+        font-family: "Poppins";
+        color: rgb(48, 48, 48);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.065;  
+        letter-spacing: 1.5px; 
+       
+} 
+    &__h1 {
+            font-size: 60px;
+            font-family: "Poppins";
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            line-height: 1.047;
+            width: 60%;
+            display: block;
+            margin: 15px auto;
+          
+}
+}
+
+
+.multiple-items {
+    position: relative;
+    left: 90px;
+    &__slider {   
+        width: 100vw;
+        margin: 20px auto;
+    }
+}
+
+.imgWrapper {
+    height: 20vw;
+    width: 23vw;
+    position: relative;
+    box-sizing: border-box;
+    &__hoverDiv {
+        display: none;
+    }
+    &__title {
+            font-size: 25px;
+            font-family: "Poppins";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            line-height: 0.857;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-top: 65%;
+            margin-bottom: 5px;
+    }
+    &__Fabrizio{
+            font-size: 10px;
+            font-family: "Poppins";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 0,5; 
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin: 0px;
+    }
+}
+
+.imgWrapper img {
+    width: 23vw;
+    height: 20vw;
+    object-fit: cover;
+}
+.imgWrapper:hover .imgWrapper__hoverDiv {
+    display: block;
+    position: absolute;
+    width: 23vw;
+    height: 20vw;
+    background-color: #32eaad;
+    opacity: 85%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.prev {
+    display: inline-block;
+    width: 60px;
+    position: absolute;
+    top: 45%;
+    left: -75px;
+    z-index: 2;
+}
+.next {
+    display: inline-block;
+    width: 60px;
+    position: absolute;
+    top: 45%;
+    right: 125px;
+    z-index: 2;
+}
