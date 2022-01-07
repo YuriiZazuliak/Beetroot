@@ -9,7 +9,8 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" v-model.lazy.number="getNumber" placeholder="Enter a number" class="input">
+        <!-- <input type="text" v-model.lazy.number="getNumber" placeholder="Enter a number" class="input"> -->
+        <input type="text" v-on:keyup.enter="getNumber = $event.target.value" placeholder="Enter a number" class="input">
         <p v-if="Number(getNumber)">{{getNumber}}</p>       
         <p v-else-if="getNumber == null">{{getNumber}}</p>
         <p v-else>NUMBER!!!!</p>
@@ -33,12 +34,17 @@
                 },
                 minusFunc: function () {
                     return this.getNumber--;
-                }                     
+                },    
+                setValue: function(value) {
+                    this.getNumber = Number(value);
+                    console.log(value);
+                }                
         }
         
     });
                  let paragraph = document.querySelector("input");
                  paragraph.addEventListener("blur", (event) => {
+                    getNumber = $event.target.value;
                      event.target.value = "";
                  })
              
