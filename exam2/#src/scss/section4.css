@@ -129,7 +129,7 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 130px;
+  padding: 0 15px 130px;
 }
 
 .footer__logo {

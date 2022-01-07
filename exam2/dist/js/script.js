@@ -1,15 +1,44 @@
 //scroll
 
 $(document).scroll(() => {
- if ($(window).scrollTop() > 600) {
+ if ($(window).scrollTop() > 100) {
    $(".navbar").addClass("navBar");
 } else {
    $(".navBar").removeClass("navBar");
 }});
 
+//hamburger
+let hamburger = document.querySelector(".hamburger"); 
+  hamburger.addEventListener("click", function() {
+    hamburger.classList.toggle("is-active");
+    document.querySelector(".navbar__menu").classList.toggle("navbar__menu-opened");
+  });
+document.querySelector(".navbar__menu").addEventListener("click", function() {
+   hamburger.classList.remove("is-active");
+   document.querySelector(".navbar__menu").classList.remove("navbar__menu-opened");
+   // hamburger.stopPropagation();
+});
 
 
 
+//navigation menu
+$(document).scroll(() => {
+   if ($(window).scrollTop() < 550) {
+      $(".navBar__cheked").removeClass("navBar__cheked");
+      $(".navbar__nav-item:first-child").addClass("navBar__cheked");   
+  } else if ($(window).scrollTop() < 1900) {
+   $(".navBar__cheked").removeClass("navBar__cheked");
+   $(".navbar__nav-item:nth-child(2)").addClass("navBar__cheked");   
+} else if ($(window).scrollTop() < 3900) {
+   $(".navBar__cheked").removeClass("navBar__cheked");
+   $(".navbar__nav-item:nth-child(3)").addClass("navBar__cheked");   
+} else if ($(window).scrollTop() < 6600) {
+   $(".navBar__cheked").removeClass("navBar__cheked");
+   $(".navbar__nav-item:last-child").addClass("navBar__cheked");   
+} else {
+   $(".navBar__cheked").removeClass("navBar__cheked");
+}
+});
 
 
 //header sllider
@@ -25,6 +54,23 @@ $(document).ready(function(){
       });
    });  
 
+
+//translate animation
+$(document).scroll(() => {
+   if ($(window).scrollTop() >= 350 && $(window).scrollTop() <= 1200) {
+      $("#img-wrap__img").addClass("img-translate");
+   } else {
+      $(".img-translate").removeClass("img-translate");
+   }
+});
+$(document).scroll(() => {
+   if ($(window).scrollTop() >= 600 && $(window).scrollTop() <= 1550) {
+      $("#img-wrap__img2").addClass("img2-translate");
+   } else {
+      $(".img2-translate").removeClass("img2-translate");
+   }
+})
+
 //slick slider
 $(document).ready(function(){
     $('.slicerWrap').slick({
@@ -34,7 +80,24 @@ $(document).ready(function(){
         dots: true,
         speed: 400,
         prevArrow: `<img src="./img/Left.png" class="prev" alt="prev">`,
-        nextArrow: `<img src="./img/Right.png" class="next" alt="next">`
+        nextArrow: `<img src="./img/Right.png" class="next" alt="next">`,
+        responsive: [
+           {
+              breakpoint: 1350,
+                settings:  {
+                     variableWidth: true,
+                     centerMode: true,
+                  }
+           },
+           {
+               breakpoint: 650,
+               settings:  {
+                  slidesToShow: 2,
+                  variableWidth: true,
+                  //centerMode: true,
+               }
+           },
+        ]
     });
 });
 
@@ -63,4 +126,23 @@ function initMap() {
     information.open(map, marker);
  });
  }
+
+ //form validation
+ function validateForm() {
+   let x = document.forms["form"]["name"].value;
+   let y = document.forms["form"]["email"].value;
+   if (x == "" || Number(x)) {
+      document.querySelector(".forma__iput").value = "";
+      document.querySelector(".forma__iput").placeholder = "Error name";
+      return false;
+   } else if (y == "" || Number(y)) {
+      document.querySelector('#email').placeholder = "Enter your Email";
+      return false;
+   }
+   
+};
+// document.querySelector(".forma__button").addEventListener("click", () => {
+//  return (validateForm() && validateEmail());
  
+// }); 
+;
